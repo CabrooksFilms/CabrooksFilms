@@ -1,0 +1,375 @@
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: #555;
+	line-height: 1.5;
+}
+
+.header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	margin: 5vh auto 5vh auto;
+}
+
+.header > a {
+	text-align: center;
+}
+
+.logo {
+	width: 100%;
+}
+
+.navigation {
+	display: flex;
+	height: 10vh;
+	background: #f4f4f4;
+}
+
+.navigation .toggler {
+	display: none;
+}
+
+.navigation .hamburger {
+	display: none;
+}
+
+.navigation .menu {
+	height: 10vh;
+	width: 100%;
+}
+
+.menu > div,
+.menu > div > div {
+	height: 100%;
+}
+
+.nav-links {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	width: inherit;
+	height: 100%;
+	list-style: none;
+}
+
+.links {
+	text-align: center;
+}
+
+.nav-links li a {
+	padding: 2rem;
+	text-decoration: none;
+}
+
+.banner {
+	text-align: center;
+	a {
+	text-decoration: none;
+	}
+}
+
+.glide__slides {
+	position: relative;
+	height: 55vh;
+	border: 1px solid red;
+}
+
+li.glide__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.controller {
+	position: absolute;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	button {
+		position: relative;
+		display: flex;
+		height: 100px;
+		width: 50px;
+		align-items: center;
+		justify-content: center;
+
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.77);
+		border: none;
+		font-size: 4rem;
+		color: white;
+
+		span {
+			position: absolute;
+			top: 0%;
+		}
+	}
+}
+
+.services {
+	margin: 6rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-container {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1600px;
+	.card {
+		width: 30%;
+		padding: 1rem 1rem;
+		margin: 0 0 2rem 0;
+		text-align: center;
+	}
+}
+
+footer {
+	margin: 4rem 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.social-link {
+		height: 75px;
+		width: 75px;
+		margin: 0 1rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		height: 10vh;
+	}
+
+	.logo {
+		width: 75%;
+	}
+
+	.navigation {
+		position: relative;
+		background-color: #000;
+	}
+
+	.navigation .hamburger {
+		display: initial;
+	}
+
+	.navigation .toggler {
+		display: initial;
+		position: absolute;
+		top: 0; 
+		right: 0;
+		z-index: 2;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		opacity: 0;
+	}
+
+	.navigation .toggler:checked + .hamburger > .line {
+		transform: rotate(135deg);
+	}
+
+	.navigation .toggler:checked + .hamburger > .line:before,
+	.navigation .toggler:checked + .hamburger > .line:after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+
+	.navigation .toggler:checked:hover + .hamburger > .line {
+		transform: rotate(225deg);
+	}
+
+	.navigation .hamburger {
+		position: absolute;
+		top: 0; 
+		right: 0;
+		z-index: 1;
+		width: 60px;
+		height: 60px;
+		padding: 1rem;
+		background-color: green;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.line {
+		position: relative;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: transform 0.5s ease;
+
+ 	}
+
+	.line:before,
+	.line:after {
+		content: '';
+		position: absolute;
+		top: -10px;
+		width: 100%;
+		height: 2px;
+		background-color: inherit;
+	}
+
+	.line:after {
+		top: 10px;
+	}
+
+	.navigation {
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 1;
+	}
+
+	.navigation .menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.navigation .toggler:checked ~ .menu {
+		visibility: visible;
+	}
+
+	.navigation .toggler:checked ~ .menu > div {
+		transform: scaleY(1);
+		transition-duration: 0.5s;
+	}
+
+	.navigation .toggler:checked ~ .menu > div > div {
+		opacity: 1;
+		transition: opacity 0.5s ease;
+	}
+
+	.navigation .menu > div {
+		background: rgba(0, 0, 0, 0.75);
+		width: 200vw;
+		height: 1000vw;
+		display: flex;
+		flex: none;
+		align-items: center;
+		justify-content: center;
+		transform: scaleY(0);
+		transition: transform 0.5s ease-out;
+	}
+
+	.navigation .menu > div > div {
+		text-align: center;
+		max-width: 90vw;
+		max-height: 100vh;
+		opacity: 0;
+		transition: opacity 0.5s ease;
+	}
+
+	.nav-links {
+		width: initial;
+		flex-flow: column;
+	}
+
+	.nav-links li {
+		list-style: none;
+		color: #fff;
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+
+	.nav-links li a {
+		color: inherit;
+		text-decoration: none;
+		transition: color 0.5s ease;
+	}
+
+	.services {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+
+		.card {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 1rem;
+			margin: 1rem 0;
+			width: 100%;
+			justify-content: space-evenly;
+
+
+			.card-image {
+				margin: 1rem 0;
+			}
+
+			.card-header {
+				text-align: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				padding: 0 1rem;
+			}
+		}
+
+		#first {
+			margin-top: 0;
+		}
+	}
+
+}
+
+
+@media screen and (max-width: 360px) {
+	.logo {
+		width: 50%;
+	}
+
+	.brand {
+		font-size: 4vw;
+	}
+
+	.caption {
+		font-size: 3vw;
+	}
+
+
+}
+
+@import "./team";
+@import "./locations";
