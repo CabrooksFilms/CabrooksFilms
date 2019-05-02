@@ -19,7 +19,7 @@ function createSlide() {
 
 window.addEventListener('DOMContentLoaded', e => {
 	//Check if page is index.html
-	if (e.target.location.pathname !== '/index.html' || e.target.location.pathname !== '/') {
+	if (e.target.location.pathname !== '/index.html' && e.target.location.pathname !== '/') {
 		return
 	} 
 	else {
