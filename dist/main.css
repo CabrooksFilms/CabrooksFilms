@@ -518,5 +518,66 @@ footer {
       .city-container .locations .city-card .city-text {
         margin: 2em 0;
         padding: 0 3em; } }
+.shelf {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center; }
+  .shelf .price-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1em;
+    margin: 2em; }
+    .shelf .price-cards .price:nth-child(2) {
+      padding: 0 2em;
+      border-left: 2px rgba(0, 0, 0, 0.2) dotted;
+      border-right: 2px rgba(0, 0, 0, 0.2) dotted; }
+
+table {
+  width: 75%;
+  margin: 4em auto; }
+
+.big-table th, .big-table td {
+  border: 2px rgba(0, 0, 0, 0.2) solid; }
+.big-table th {
+  padding: 0 1em;
+  background-color: #CCC; }
+.big-table td {
+  padding: 1em; }
+
+.small-table {
+  display: none; }
+  .small-table th, .small-table td {
+    border: 2px rgba(0, 0, 0, 0.2) solid; }
+  .small-table th {
+    padding: 1em 0;
+    background-color: #CCC; }
+  .small-table td {
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center; }
+
+@media screen and (max-width: 500px) {
+  .small-table {
+    display: block;
+    width: 100%; }
+
+  .big-table {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .shelf .price-cards {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2em 1em; }
+    .shelf .price-cards .price {
+      margin: 2em 0; }
+    .shelf .price-cards .price:nth-child(2) {
+      padding: 0;
+      border: none; } }
+.banner {
+  margin-top: 2em; }
 
 /*# sourceMappingURL=main.css.map */

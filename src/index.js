@@ -5,7 +5,7 @@ function createSlide() {
 	const slides = new Glide('.glide', {
 		type: 'carousel',
 		perView: 3,
-		autoplay: 10000,
+		autoplay: 5000,
 		peek: 50,
 		breakpoints: {
 			600: {
@@ -18,11 +18,7 @@ function createSlide() {
 }
 
 window.addEventListener('DOMContentLoaded', e => {
-	//Check if page is index.html
-	if (e.target.location.pathname !== '/index.html' && e.target.location.pathname !== '/') {
-		return
-	} 
-	else {
+	if (e.target.location.pathname == '/index.html' && e.target.location.pathname == '/') {
 		createSlide();
-	}
+	} 
 });
