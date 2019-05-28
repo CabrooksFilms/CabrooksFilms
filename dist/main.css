@@ -275,8 +275,8 @@ footer {
     top: 0;
     right: 0;
     z-index: 1;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     padding: 1rem;
     background-color: green;
     display: flex;
@@ -579,5 +579,27 @@ table {
       border: none; } }
 .banner {
   margin-top: 2em; }
+
+.inquiry {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px #ccc dotted;
+  padding: 2em;
+  margin: 2em; }
+  .inquiry .form-title {
+    margin-bottom: 1em; }
+  .inquiry div {
+    margin: 2em 0; }
+    .inquiry div input {
+      border: 1px #ccc solid;
+      border-radius: 5px;
+      min-height: 40px;
+      width: 100%; }
+    .inquiry div textarea {
+      border-radius: 5px;
+      min-height: 150px;
+      width: 100%; }
 
 /*# sourceMappingURL=main.css.map */

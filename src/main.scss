@@ -1,5 +1,6 @@
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "./mixin";
 
 * {
 	margin: 0;
@@ -11,10 +12,7 @@
 }
 
 .header {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
+	@include flexbox(column, center, center);
 	width: 90%;
 	margin: 5vh auto 5vh auto;
 }
@@ -205,8 +203,8 @@ footer {
 		top: 0; 
 		right: 0;
 		z-index: 1;
-		width: 60px;
-		height: 60px;
+		width: 48px;
+		height: 48px;
 		padding: 1rem;
 		background-color: green;
 		display: flex;
@@ -375,3 +373,4 @@ footer {
 @import "./locations";
 @import "./pricing";
 @import "./gallery";
+@import "./contact";

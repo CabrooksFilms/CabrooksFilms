@@ -1,0 +1,27 @@
+.inquiry {
+	@include flexbox(column, center, center);
+	border: 2px #ccc dotted;
+	padding: 2em;
+	margin: 2em;
+
+	.form-title {
+		margin-bottom: 1em;
+	} 
+
+	div {
+		margin: 2em 0;
+
+		input {
+			border: 1px #ccc solid;
+			border-radius: 5px;
+			min-height: 40px;
+			width: 100%;
+		}
+
+		textarea {
+			border-radius: 5px;
+			min-height: 150px;
+			width: 100%;
+		}
+	}
+}

@@ -18,7 +18,7 @@ function createSlide() {
 }
 
 window.addEventListener('DOMContentLoaded', e => {
-	if (e.target.location.pathname == '/index.html' && e.target.location.pathname == '/') {
+	if (e.target.location.pathname == '/index.html' || e.target.location.pathname == '/') {
 		createSlide();
 	} 
 });

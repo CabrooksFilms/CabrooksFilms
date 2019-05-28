@@ -10,7 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sassed": "sass --watch ./src/main.scss:./dist/main.css",
+    "js": "watchify ./src/index.js -o ./dist/main.js"
   },
   "author": "Mark Rivera",
   "license": "ISC"
