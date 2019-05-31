@@ -172,13 +172,18 @@
 .glide__slides {
   position: relative;
   height: 55vh;
-  border: 1px solid red; }
+  margin-top: 20px; }
 
 li.glide__slide {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
+
+.div-slide {
+  width: inherit; }
+  .div-slide img {
+    width: 100%; }
 
 .controller {
   position: absolute;
@@ -222,6 +227,10 @@ li.glide__slide {
     padding: 1rem 1rem;
     margin: 0 0 2rem 0;
     text-align: center; }
+  .card-container .card-image {
+    margin: 1rem 0;
+    max-width: 200px;
+    max-height: 150px; }
 
 footer {
   margin: 4rem 0;
@@ -386,7 +395,9 @@ footer {
       width: 100%;
       justify-content: space-evenly; }
       .card-container .card .card-image {
-        margin: 1rem 0; }
+        margin: 1rem 0;
+        max-width: 200px;
+        max-height: 150px; }
       .card-container .card .card-header {
         text-align: center;
         display: flex;
@@ -431,7 +442,9 @@ footer {
     margin-bottom: 4rem;
     border-bottom: 2px rgba(0, 0, 0, 0.2) dotted; }
   .team-box .teams {
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    width: 75%; }
     .team-box .teams .center-column {
       border-left: 2px dotted rgba(0, 0, 0, 0.2);
       border-right: 2px dotted rgba(0, 0, 0, 0.2); }
@@ -439,18 +452,19 @@ footer {
       display: flex;
       flex-flow: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 100%; }
       .team-box .teams .team-card .people {
         display: flex;
-        flex-flow: column; }
+        flex-flow: column;
+        width: 100%; }
         .team-box .teams .team-card .people .person-card {
           display: flex;
           flex-flow: column;
           align-items: center;
           margin-bottom: 2rem; }
           .team-box .teams .team-card .people .person-card img {
-            width: 50%;
-            height: 50%; }
+            width: 100%; }
           .team-box .teams .team-card .people .person-card .person-desc {
             font-size: 14px;
             padding: 1rem;
@@ -495,13 +509,13 @@ footer {
   margin: 4em 0; }
   .city-container .locations {
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
     .city-container .locations .city-card {
       display: flex;
       flex-flow: column;
-      justify-content: center;
       align-items: center; }
+      .city-container .locations .city-card img {
+        width: 100%; }
       .city-container .locations .city-card .city-text {
         padding: 0 2em; }
 
@@ -515,9 +529,20 @@ footer {
     .city-container .locations .city-card {
       margin: 2em auto;
       border: none; }
+      .city-container .locations .city-card img {
+        width: 100%; }
       .city-container .locations .city-card .city-text {
         margin: 2em 0;
         padding: 0 3em; } }
+.hidden {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  z-index: -1; }
+
 .shelf {
   display: flex;
   flex-flow: column;
@@ -579,6 +604,27 @@ table {
       border: none; } }
 .banner {
   margin-top: 2em; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  display: block;
+  width: 50%;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 2px;
+  border: 2px #ccc solid; }
+
+label {
+  display: inline-block;
+  margin-top: 15px; }
+
+.submit {
+  width: 150px;
+  height: 50px;
+  margin: 15px 0; }
 
 .inquiry {
   display: flex;

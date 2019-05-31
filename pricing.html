@@ -12,9 +12,9 @@
 <body>
 	<header class="header">
 		<a href="#">
-			<img src="./assets/placeholder.png" alt="Cabrooks Photography Logo" class="logo">
+			<img src="./assets/photos/Cabrooks Films Website Header.png" alt="Cabrooks Photography Logo" class="logo">
 		</a>
-		<h2 class="brand">Cabrooks Photography</h2>
+		<h2 class="brand">Cabrooks Films</h2>
 		<small class="caption">Capture every moment</small>
 	</header>
 
@@ -44,7 +44,8 @@
 
 <main class="shelf">
 	<h2>Pricing</h2>
-	<section class="price-cards">
+
+	<!-- <section class="price-cards">
 		<div class="price">
 			<h3 class="price-title">All Locations</h3>
 			<div class="details">
@@ -71,8 +72,8 @@
 				<p>$450 4+</p>
 			</div>
 		</div>
-	</section>
-
+	</section> -->
+	
 	<section>
 		<table class="big-table">
 	  	<tr>
@@ -130,7 +131,7 @@
 		<h2>Inquiry Form</h2>
 		<form name="inquiry" netlify-honeypot="bot-field" method="POST" netlify>
 			 <p class="hidden">
-    		<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    		<label>Don’t fill this out if you're human: <input name="bot-field"/></label>
   		</p>
 			<p>
 				<label for="name">Name: </label>
@@ -162,7 +163,7 @@
 				<label for="location">Location: </label>
 				<select name="location">
 					<option value="New York City" selected>New York City</option>
-					<option value="New Jersey">New Jersey (Hudson Yards)</option>
+					<option value="New Jersey">New Jersey (Hudson County)</option>
 					<option value="Florida">South Florida</option>
 				</select>
 			</p>
@@ -202,7 +203,7 @@
 				</select>
 			</p>
 
-			<input type="submit" name="submit">
+			<input type="submit" name="submit" class="submit">
 		</form>
 	</section>
 </main>

@@ -35,6 +35,8 @@
 
 	.teams {
 		display: flex;
+		justify-content: center;
+		width: 75%;
 
 	.center-column {
 		border-left: 2px dotted rgba(0, 0, 0, 0.2);
@@ -46,10 +48,12 @@
 			flex-flow: column;
 			justify-content: center;
 			align-items: center;
+			width: 100%;
 
 			.people {
 				display: flex;
 				flex-flow: column;
+				width: 100%;
 
 				.person-card {
 					display: flex;
@@ -58,8 +62,7 @@
 					margin-bottom: 2rem;
 
 					img {
-						width: 50%;
-						height: 50%;
+						width: 100%;
 					}
 
 					.person-desc {

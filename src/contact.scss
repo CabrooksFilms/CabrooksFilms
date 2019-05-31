@@ -1,3 +1,27 @@
+	input[type="text"], 
+	input[type="email"],
+	input[type="tel"],
+	input[type="date"],
+	select {
+	display: block;
+	width: 50%;
+	height: 48px;
+	font-size: 24px;
+	border-radius: 2px;
+	border: 2px #ccc solid;
+}
+
+label {
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.submit {
+	width: 150px;
+	height: 50px;
+	margin: 15px 0;
+}
+
 .inquiry {
 	@include flexbox(column, center, center);
 	border: 2px #ccc dotted;

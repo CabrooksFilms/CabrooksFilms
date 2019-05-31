@@ -8,13 +8,15 @@
 	.locations {
 		display: flex;
 		justify-content: center;
-		align-items: center;
 
 		.city-card {
 			display: flex;
 			flex-flow: column;
-			justify-content: center;
 			align-items: center;
+
+			img {
+				width: 100%;
+			}
 		
 			.city-text {
 				padding: 0 2em;
@@ -36,6 +38,10 @@
 			.city-card {
 				margin: 2em auto;
 				border: none;
+
+				img {
+					width: 100%;
+				}
 
 				.city-text {
 					margin: 2em 0;
