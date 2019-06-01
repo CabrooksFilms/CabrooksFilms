@@ -14,8 +14,6 @@
 		<a href="#">
 			<img src="./assets/photos/Cabrooks Films Website Header.png" alt="Cabrooks Photography Logo" class="logo">
 		</a>
-		<h2 class="brand">Cabrooks Films</h2>
-		<small class="caption">Capture every moment</small>
 	</header>
 
 	<nav class="navigation" role="navigation">
@@ -44,20 +42,81 @@
 
 	<section class="inquiry">
 		<h2 class="form-title">Inquiry Form</h2>
-		<form method="post">
-			<div>
-				<label for="name">Name:</label>
-				<input type="text" name="name" id="name">
-			</div>
-			<div>
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email">
-			</div>
-			<div>
-				<label for="message">Message:</label>
-				<textarea id="msg" name="message" id="message"></textarea>
-			</div>
-			<button type="submit">Send your message</button>
+		<form name="inquiry" netlify-honeypot="bot-field" method="POST" netlify>
+			 <p class="hidden">
+    		<label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+  		</p>
+			<p>
+				<label for="name">Name: </label>
+				<input type="text" name="name">				
+			</p>
+			<p>
+				<label for="email">Email: </label>
+				<input type="email" name="email">
+			</p>
+
+			<p>
+				<label for="phone">Number:</label>
+				<input type="tel" name="phone">
+			</p>
+
+			<p>
+				<p>Best time to reach you: </p>
+				<input type="radio" name="time" value="Morning">
+				<label for="radio">Morning</label>
+				<br>
+				<input type="radio" name="time" value="Afternoon">
+				<label for="radio">Afternoon</label>
+				<br>
+				<input type="radio" name="time" value="Evening">
+				<label for="radio">Evening</label>
+			</p>
+
+			<p>
+				<label for="location">Location: </label>
+				<select name="location">
+					<option value="New York City" selected>New York City</option>
+					<option value="New Jersey">New Jersey (Hudson County)</option>
+					<option value="Florida">South Florida</option>
+				</select>
+			</p>
+
+			<p>
+				<input type="checkbox" name="headshot">
+				<label for="headshot">Headshot</label>
+				<input type="checkbox" name="lifestyle">
+				<label for="lifestyle">Lifestyle</label>
+				<input type="checkbox" name="maternity">
+				<label for="maternity">Maternity</label>
+				<input type="checkbox" name="couple-engagement">
+				<label for="couple-engagement">Couple/Engagement</label>
+				<input type="checkbox" name="family-group">
+				<label for="family-group">Family/Group</label>
+				<input type="checkbox" name="occasion">
+				<label for="occasion">Special Occasion</label>
+			</p>
+
+			<p>
+				<label for="date">Estimated Shoot Date:</label>
+				<input type="date" name="date">
+				<p>
+					<small>Note: We only hold shoots Saturdays and Sundays. Must be scheduled 2 weeks prior to date of shoot.</small>					
+				</p>
+			</p>
+
+			<p>
+				<label for="info">How did you hear about us?: </label>
+				<select name="info">
+					<option value="Social Media">Social Media</option>
+					<option value="Brand Ambassador">Brand Ambassador</option>
+					<option value="Cabrooks Films Employee">Cabrooks Films Employee</option>
+					<option value="Google">Google</option>
+					<option value="Flyer">Flyer</option>
+					<option value="Other">Other</option>
+				</select>
+			</p>
+
+			<input type="submit" name="submit" class="submit">
 		</form>
 	</section>
 

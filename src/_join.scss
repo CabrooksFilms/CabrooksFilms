@@ -1,0 +1,32 @@
+.ambass-form {
+	width: 75%;
+	margin: 0 auto;
+	padding: 15px 75px;
+}
+
+	input[type="text"], 
+	input[type="email"],
+	input[type="tel"],
+	input[type="date"],
+	input[type="url"],
+	select {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+textarea {
+	width: 100%;
+	height: 250px;
+}
+
+.submit {
+	width: 150px;
+	height: 50px;
+	margin: 15px 0;
+}
+
+.ambass-desc {
+	width: 75%;
+	margin: 25px auto;
+}

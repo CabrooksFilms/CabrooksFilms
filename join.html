@@ -14,8 +14,6 @@
 		<a href="#">
 			<img src="./assets/photos/Cabrooks Films Website Header.png" alt="Cabrooks Photography Logo" class="logo">
 		</a>
-		<h2 class="brand">Cabrooks Films</h2>
-		<small class="caption">Capture every moment</small>
 	</header>
 
 <nav class="navigation" role="navigation">
@@ -43,10 +41,122 @@
 </nav>
 
 <main>
-	<h2>Be an Ambassador!</h2>
-	<p>
-		More information on this to come once confirmed.
-	</p>
+	<div class="ambass-desc">
+		<h2>Be an Ambassador!</h2>
+		<p class="ambassador-text">
+			Do you have a passion for photography, use social media every day, and want to help the environment? Cabrooks Films Ambassadors program is currently looking for new Ambassadors ages 16-25 to promote our services and save the environment one step at a time. Ambassadors would be responsible for promoting services and lead possible clients to Cabrooks Films through social media platforms such as Facebook and Instagram as well as begin our “give back” to the environment by participating and/or starting local cleanups in your community. Though unpaid, for every action there is a point system that tracks each ambassador’s progress and for every 200 points, an incentive is rewarded by Cabrooks Films. Ambassadors also become a part of a virtual community that can help them interact with others that they might not otherwise meet. This opens doors for them in the future as far as combining talents for future endeavors as well as mentorship with high school and college kids. Fill out the application below and see if you have what it takes to be a Cabrooks Films Brand Ambassador!
+		</p>
+	</div>
+	
+
+	<form name="ambassador" netlify-honeypot="bot-field" method="POST" netlify class="ambass-form">
+		<p class="hidden">
+    	<label>Don’t fill this out if you're human: <input name="bot-field"/></label>
+  	</p>
+
+  	<p>
+			<label for="name">Name: </label>
+			<input type="text" name="name">				
+		</p>
+		<p>
+			<label for="age">Age: </label>
+			<input type="number" name="age" min="0" max="99">
+		</p>
+
+		<p>
+			<label for="phone">Number:</label>
+			<input type="tel" name="phone">
+		</p>
+
+		<p>
+			<label for="email">Email: </label>
+			<input type="email" name="email">				
+		</p>
+		<p>
+			<label for="location">Location: </label>
+			<br>
+			<input type="radio" name="location" value="New York">
+			<label for="radio">New York</label>
+			<br>
+			<input type="radio" name="location" value="New Jersey">
+			<label for="radio">New Jersey</label>
+			<br>
+			<input type="radio" name="location" value="South Florida">
+			<label for="radio">South Jersey</label>
+		</p>
+
+		<p>
+			<label for="facebook">Facebook:</label>
+			<input type="url" name="facebook">
+		</p>
+
+		<p>
+			<label for="instagram">Instagram:</label>
+			<input type="url" name="instagram">
+		</p>
+
+		<p>
+			<p>Are you a current Student?</p>
+			<input type="radio" name="student" value="Yes">
+			<label for="radio">Yes</label>
+			<br>
+			<input type="radio" name="student" value="No">
+			<label for="radio">No</label>
+		</p>
+
+		<p>
+			<label for="school-status">Current level of education:</label>
+			<select name="school-status">
+				<option>In High School</option>
+				<option>High Schoool Graduate</option>
+				<option>In College</option>
+				<option>Some College</option>
+				<option>College Grad</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="radio">Do you have regular access to a computer and internet?</label>
+			<input type="radio" name="access" value="Yes">
+			<label for="radio">Yes</label>
+			<input type="radio" name="access" value="No">
+			<label for="radio">No</label>
+		</p>
+
+		<p>
+			<label for="radio">Do you have a working phone?</label>
+			<input type="radio" name="working-phone" value="Yes">
+			<label for="radio">Yes</label>
+			<input type="radio" name="working-phone" value="No">
+			<label for="radio">No</label>
+		</p>
+
+		<p>
+			<label for="why">Why do you want to want to be ambassador of Cabrooks Films</label>
+			<br>
+			<textarea name="why"></textarea>
+		</p>
+
+		<p>
+			<label for="task">Which of the following do you see yourself doing the most and why?</label>
+			<select name="task">
+				<option>Generating Likes/Follows on Social Media</option>
+				<option>Sharing Cabrooks Films ads</option>
+				<option>Gaining client leads</option>
+				<option>Suggesting Locations</option>
+				<option>Participating in local cleanups</option>
+				<option>Organizing local cleanups</option>
+			</select>
+		</p>
+
+		<p>
+			<label for="career">What are you most passionate as a career choice and why?</label>
+			<br>
+			<textarea name="career"></textarea>
+		</p>
+
+		<input type="submit" name="submit" class="submit">
+	</form>
 </main>
 
 <section class="banner">
