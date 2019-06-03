@@ -424,7 +424,7 @@ footer {
   margin: 6rem auto;
   padding: 4rem 3rem;
   text-align: justify;
-  border: 2px rgba(0, 0, 0, 0.2) dotted; }
+  border: 2px rgba(246, 100, 9, 0.5) dotted; }
   .blurb h2 {
     margin-bottom: 1rem;
     font-size: 2em; }
@@ -440,14 +440,14 @@ footer {
     display: flex;
     flex-flow: row;
     margin-bottom: 4rem;
-    border-bottom: 2px rgba(0, 0, 0, 0.2) dotted; }
+    border-bottom: 2px rgba(246, 100, 9, 0.5) dotted; }
   .team-box .teams {
     display: flex;
     justify-content: center;
     width: 75%; }
     .team-box .teams .center-column {
-      border-left: 2px dotted rgba(0, 0, 0, 0.2);
-      border-right: 2px dotted rgba(0, 0, 0, 0.2); }
+      border-left: 2px rgba(246, 100, 9, 0.5) dotted;
+      border-right: 2px rgba(246, 100, 9, 0.5) dotted; }
     .team-box .teams .team-card {
       display: flex;
       flex-flow: column;
@@ -520,8 +520,8 @@ footer {
         padding: 0 2em; }
 
 .city-card:nth-child(2) {
-  border-left: 2px rgba(0, 0, 0, 0.2) dotted;
-  border-right: 2px rgba(0, 0, 0, 0.2) dotted; }
+  border-left: 2px rgba(246, 100, 9, 0.5) dotted;
+  border-right: 2px rgba(246, 100, 9, 0.5) dotted; }
 
 @media screen and (max-width: 768px) {
   .city-container .locations {
@@ -556,8 +556,8 @@ footer {
     margin: 2em; }
     .shelf .price-cards .price:nth-child(2) {
       padding: 0 2em;
-      border-left: 2px rgba(0, 0, 0, 0.2) dotted;
-      border-right: 2px rgba(0, 0, 0, 0.2) dotted; }
+      border-left: 2px rgba(246, 100, 9, 0.5) dotted;
+      border-right: 2px rgba(246, 100, 9, 0.5) dotted; }
 
 table {
   width: 75%;
@@ -618,6 +618,15 @@ select {
   border-radius: 2px;
   border: 2px #ccc solid; }
 
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border: 2px rgba(246, 100, 9, 0.5) solid; }
+
 label {
   display: inline-block;
   margin-top: 15px; }
@@ -632,7 +641,7 @@ label {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  border: 2px #ccc dotted;
+  border: 2px rgba(246, 100, 9, 0.5) dotted;
   padding: 2em;
   margin: 2em; }
   .inquiry .form-title {

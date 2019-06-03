@@ -12,6 +12,16 @@
 	border: 2px #ccc solid;
 }
 
+	input[type="text"]:focus, 
+	input[type="email"]:focus,
+	input[type="tel"]:focus,
+	input[type="date"]:focus,
+	input[type="number"]:focus,
+	select:focus {
+		outline: none;
+		border: 2px rgba(246,100,9, 0.5) solid;
+	}
+
 label {
 	display: inline-block;
 	margin-top: 15px;
@@ -25,7 +35,7 @@ label {
 
 .inquiry {
 	@include flexbox(column, center, center);
-	border: 2px #ccc dotted;
+	border: 2px rgba(246,100,9, 0.5) dotted;
 	padding: 2em;
 	margin: 2em;
 

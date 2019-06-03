@@ -10,7 +10,7 @@
 	padding: 4rem 3rem;
 	text-align: justify;
 
-	border: 2px rgba(0, 0, 0, 0.2) dotted;
+	border: 2px rgba(246,100,9, 0.5) dotted;
 
 	h2 {
 		margin-bottom: 1rem;
@@ -30,7 +30,7 @@
 		display: flex;
 		flex-flow: row;
 		margin-bottom: 4rem;
-		border-bottom: 2px rgba(0, 0, 0, 0.2) dotted;
+		border-bottom: 2px rgba(246,100,9, 0.5) dotted;
 	}
 
 	.teams {
@@ -39,8 +39,8 @@
 		width: 75%;
 
 	.center-column {
-		border-left: 2px dotted rgba(0, 0, 0, 0.2);
-		border-right: 2px dotted rgba(0, 0, 0, 0.2);
+		border-left: 2px rgba(246,100,9, 0.5) dotted;
+		border-right: 2px rgba(246,100,9, 0.5) dotted;
 	}
 
 		.team-card {
