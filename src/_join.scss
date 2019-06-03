@@ -30,3 +30,10 @@ textarea {
 	width: 75%;
 	margin: 25px auto;
 }
+
+@media screen and (max-width: 768px) {
+	.ambass-form {
+		width: 75%;
+		padding: 0;
+	}
+}
