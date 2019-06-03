@@ -513,7 +513,8 @@ footer {
     .city-container .locations .city-card {
       display: flex;
       flex-flow: column;
-      align-items: center; }
+      align-items: center;
+      flex: 1 1 0; }
       .city-container .locations .city-card img {
         width: 100%; }
       .city-container .locations .city-card .city-text {
